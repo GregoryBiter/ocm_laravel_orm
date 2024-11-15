@@ -1,0 +1,11 @@
+{
+"name": "Laravel ORM Interated",
+"code": "laravel_orm",
+"avtore": "gregorybiter@gmail.com"
+"require-composer": {
+	 "illuminate/database": "^7.0"
+}
+"require-module": {
+}
+
+}
