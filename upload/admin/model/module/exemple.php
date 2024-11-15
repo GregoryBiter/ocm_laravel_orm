@@ -7,9 +7,11 @@ if (!file_exists($bootstrapPath)) {
 require $bootstrapPath;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
+
 class ModelModuleExemple extends Model {
 
-    public function install() {
+
+    public function migrate() {
         if (!Capsule::schema()->hasTable('exemple')) {
             Capsule::schema()->create('exemple', function ($table) {
                 $table->increments('id');
@@ -18,7 +20,7 @@ class ModelModuleExemple extends Model {
             });
         }
     }
-    public function uninstall() {
+    public function unmigrate() {
         Capsule::schema()->dropIfExists('exemple');
     }
 
