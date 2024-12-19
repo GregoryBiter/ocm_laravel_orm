@@ -10,7 +10,7 @@ if (version_compare($phpVersion, '8.0.0', '>=')) {
 
 require_once $autoloadFile;
 
-namespace LaravelORM;
+namespace LaravelOrm;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
